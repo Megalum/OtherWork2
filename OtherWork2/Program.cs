@@ -72,13 +72,14 @@ namespace OtherWork2
             {
                 bool flag = true;
                 Console.Write(str);
+                ConsoleKeyInfo key;
                 do
                 {
-                    continie = Console.ReadKey();
-                    if (continie.Key.ToString() == "N" || continie.Key.ToString() == "Y")
+                    key = Console.ReadKey();
+                    if (key.Key.ToString() == "N" || key.Key.ToString() == "Y")
                         flag = false;
                 } while (flag);
-                return continie;
+                return key;
             }
 
         }
